@@ -1,0 +1,8 @@
+{
+    "label1":{"class11":{"app11":1,"app12":1,"app13":0},
+              "class12":{"app11":1,"app12":1,"app13":0}},
+    "label2":{"class21":{"app21":1,"app22":1,"app23":0},
+              "class22":{"app21":1,"app22":1,"app23":0}},
+    "label3":{"class31":{"app31":1,"app32":1,"app33":0},
+              "class32":{"app31":1,"app32":1,"app33":0}}
+}

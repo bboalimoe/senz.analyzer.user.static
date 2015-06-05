@@ -1,0 +1,57 @@
+{
+    "own_car": {
+        "own": {
+            "com.autonavi.minimap": 1,
+            "cld.navi.mainframe": 1,
+            "com.kplus.car": 1,
+            "cn.eclicks.wzsearch": 1,
+            "com.android.cheyooh": 1,
+            "cn.com.tiros.android.navidog": 1,
+            "com.sdu.didi.gui": 1,
+            "cn.buding.martin": 1,
+            "com.autohome.mycar": 1,
+            "com.mapbar.android.trybuynavi": 1,
+            "com.ubercab.driver": 1,
+            "com.uu.uueeye": 1,
+            "cn.edaijia.android.client": 1,
+            "com.chediandian.app": 1,
+            "com.mygolbs.mybus": 0,
+            "com.sdu.didi.psnger": 0,
+            "com.edcsc.wbus": 0,
+            "cn.chinabus.main": 0,
+            "com.didapinche.booking": 0,
+            "com.baojia": 0,
+            "com.aibang.abbus.bus": 0,
+            "com.ygkj.chelaile.standard": 0,
+            "com.coomix.app.bus": 0,
+            "com.ourlinc": 0
+            
+        },
+        "notown": {
+            "com.autonavi.minimap": 0,
+            "cld.navi.mainframe": 0,
+            "com.kplus.car": 0,
+            "cn.eclicks.wzsearch": 0,
+            "com.android.cheyooh": 0,
+            "cn.com.tiros.android.navidog": 0,
+            "com.sdu.didi.gui": 0,
+            "cn.buding.martin": 0,
+            "com.autohome.mycar": 0,
+            "com.mapbar.android.trybuynavi": 0,
+            "com.ubercab.driver": 0,
+            "com.uu.uueeye": 0,
+            "cn.edaijia.android.client": 0,
+            "com.chediandian.app": 0,
+            "com.mygolbs.mybus": 1,
+            "com.sdu.didi.psnger": 1,
+            "com.edcsc.wbus": 1,
+            "cn.chinabus.main": 1,
+            "com.didapinche.booking": 1,
+            "com.baojia": 1,
+            "com.aibang.abbus.bus": 1,
+            "com.ygkj.chelaile.standard": 1,
+            "com.coomix.app.bus": 1,
+            "com.ourlinc": 1
+        }
+    }
+}
