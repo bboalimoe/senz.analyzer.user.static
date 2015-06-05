@@ -1,30 +1,23 @@
 # -*- encoding=utf-8 -*-
 __author__ = 'zhongziyuan'
 
+import os
 import json
 import requests
 import settings
 import leancloud
+APP_ID = os.environ.get("LC_APP_ID")
+APP_KEY = os.environ.get("LC_APP_KEY")
+
+leancloud.init(APP_ID,APP_KEY)
+
+
+
+#todo the handler is unfinished
 
 class LeancloudHandler(object):
-    # base = r'https://cn.avoscloud.com'
-    base = r'https://leancloud.cn'
-    base_classes = base+r'/1.1/classes/'
-    base_patch = base+r'/1.1/batch'
-    Users = base+r'/1.1/users'
-    app_settings = [settings.avos_app_id, settings.avos_app_key]
 
-    @classmethod
-    def headers(cls):
-        """
-        get the request header
-        :return: header dict
-        """
-        return {
-            "X-AVOSCloud-Application-Id": cls.app_settings[0],
-            "X-AVOSCloud-Application-Key": cls.app_settings[1],
-            "Content-Type": "application/json"
-        }
+
 
     def __init__(self):
         pass
@@ -75,7 +68,34 @@ class LeancloudHandler(object):
         if res:
             return json.loads(res)['results']
 
+
+
+
+##### demo for gevent
+#from gevent import monkey; monkey.patch_all()
+import gevent
+import urllib2
+##### demo for gevent
+
+# gevent demo
+# def f(url):
+#     print "GET:%s" %url
+#     resp = urllib2.urlopen(url)
+#     data = resp.read()
+#     print len(data)
+#
+# gevent.joinall([
+#     gevent.spawn(f,"https://baidu.com"),
+#     gevent.spawn(f,"https://yahoo.com")
+# ]
+# )
+
+
 # Test
 if __name__ == '__main__':
     lc = LeancloudHandler()
-    print lc.get_all("app_dict")
+
+    a = lc.get_all("app_dict")
+    print len(a)
+    for i in a:
+        print i

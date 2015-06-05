@@ -5,17 +5,17 @@ from datetime import datetime
 from flask import Flask,request
 from flask import render_template
 from static_info import InfoGetter
-from views.todos import todos_view
+#from views.todos import todos_view
 import json
 app = Flask(__name__)
 
 # 动态路由
-app.register_blueprint(todos_view, url_prefix='/todos')
+#app.register_blueprint(todos_view, url_prefix='/todos')
 
 
-@app.route('/')
-def index():
-    return render_template('index.html')
+# @app.route('/')
+# def index():
+#     return render_template('index.html')
 
 
 @app.route('/time')
@@ -36,7 +36,12 @@ def get_static_info():
 
     return "Please use GET!"
 
-
+@app.route("/env")
+def test_os_env():
+    import os
+    appid = os.environ.get("LC_APP_ID")
+    print 1
+    return appid
 
 
 if __name__ == "__main__":

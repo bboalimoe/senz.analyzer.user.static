@@ -1,6 +1,6 @@
 # coding: utf-8
 
-from leancloud import Engine
+from lean_storage import Engine
 
 from app import app
 

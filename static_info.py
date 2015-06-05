@@ -4,7 +4,7 @@ __author__ = 'zhongziyuan'
 import json
 from math import sqrt
 from sys import maxint
-from util.leancloud import LeancloudHandler
+from util.lean_storage import LeancloudHandler
 
 
 class InfoGetter:

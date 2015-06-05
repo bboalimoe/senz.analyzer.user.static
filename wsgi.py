@@ -2,7 +2,7 @@
 
 import os
 
-import leancloud
+import lean_storage
 from wsgiref import simple_server
 
 from app import app
@@ -13,7 +13,7 @@ MASTER_KEY = os.environ['LC_APP_MASTER_KEY']
 PORT = int(os.environ['LC_APP_PORT'])
 
 
-leancloud.init(APP_ID, master_key=MASTER_KEY)
+lean_storage.init(APP_ID, master_key=MASTER_KEY)
 
 application = engine
 
